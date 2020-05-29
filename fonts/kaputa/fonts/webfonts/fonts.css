@@ -1,7 +1,6 @@
 
 @font-face {
-    font-family:"Kaputa Regular";
+    font-family:"Kaputa";
     src:url("Kaputa-Regular.woff2") format("woff2"),url("Kaputa-Regular.woff") format("woff"),url("Kaputa-Regular.otf") format("opentype");
     font-style:normal;font-weight:400;
 }
-        

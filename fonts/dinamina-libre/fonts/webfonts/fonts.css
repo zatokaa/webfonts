@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family:"Dinamina Unicode for Web applications";
+    font-family:"Dinamina Libre";
     src:url("DinaminaLibre.woff2") format("woff2"),url("DinaminaLibre.woff") format("woff"),url("DinaminaLibre.otf") format("opentype");
     font-style:normal;font-weight:400;
 }

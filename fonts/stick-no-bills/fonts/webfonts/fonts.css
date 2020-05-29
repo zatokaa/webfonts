@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family:"Stick No Bills";
+    src:url("StickNoBills-Light.woff2") format("woff2"),url("StickNoBills-Light.woff") format("woff"),url("StickNoBills-Light.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Stick No Bills";
+    src:url("StickNoBills-Regular.woff2") format("woff2"),url("StickNoBills-Regular.woff") format("woff"),url("StickNoBills-Regular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Stick No Bills";
+    src:url("StickNoBills-Medium.woff2") format("woff2"),url("StickNoBills-Medium.woff") format("woff"),url("StickNoBills-Medium.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Stick No Bills";
+    src:url("StickNoBills-SemiBold.woff2") format("woff2"),url("StickNoBills-SemiBold.woff") format("woff"),url("StickNoBills-SemiBold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+    font-family:"Stick No Bills";
+    src:url("StickNoBills-Bold.woff2") format("woff2"),url("StickNoBills-Bold.woff") format("woff"),url("StickNoBills-Bold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Stick No Bills";
+    src:url("StickNoBills-ExtraBold.woff2") format("woff2"),url("StickNoBills-ExtraBold.woff") format("woff"),url("StickNoBills-ExtraBold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
