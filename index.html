@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="cdn">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-Fonts CDN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="fonts/dinamina-libre/fonts/webfonts/fonts.css">
+    <link rel="stylesheet" href="fonts/maname-regular/fonts/webfonts/fonts.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script>
+    var fonts = ["Bhashitha","Bhashitha Sans","Dinamina Libre","Galle","Gemunu Libre","Kaputa","Malithi Libre","Maname","Post No Bills","Warna","Yaldevi"];
+    </script>
+
+</head>
+
+<body class="ng-cloak">
+
+    <div ng-controller="MainController" class="container">
+
+        <div class="header">
+            <h1> සිංහල වෙබ් ෆොනුරූ Sinhala Web Fonts</h1>
+            <h3>non-production use ONLY (alpha)</h3>
+        </div>
+
+        <input type="text" ng-model="query" spellcheck="false" autocomplete="off" class="search" placeholder="search in {{ fonts.length }} web-fonts...">
+
+        <div class="list" ng-show="(fonts | filter:query).length">
+            <div class="list__item" ng-repeat="font in fonts | filter:query">
+                <link rel="stylesheet" href="fonts/{{ font | slug }}/fonts/webfonts/fonts.css">
+                <p style="font-family:{{ font }}; font-size: 20px;">සීගිරි පර්වත මස්තකාරූඪ මනුෂ්‍යයෙකුට සෝදාහරණ සහිත ව හෙළයා ගේ ශෛල, වාරි, ගෘහ නිර්මාණ ශක්‍යතාව ද සෙල්බිතෙහි තැවරූ මඩස්තරයක ඇඳි නාරි චිත්‍රයන් ගෙන් සහ කැටපත්පවුරෙහි ලිඛිත කුරුටු ගීවලින් හෙළයා ගේ සෞන්දර්ය හැකියාව දු මනා සේ දැකගත හැක.
+</p>
+                <h2 class="list__title"><a href="//webfonts.lk/{{ font | slug }}/" target="_blank">{{ font }}</a></h2>
+
+                <div class="usage">
+                    <label class="label-code" for="html-{{ $index }}"> HTML: </label>
+                    <input id="html-{{ $index }}" type="text" ng-click="selectText($event)" class="input-code" readonly spellcheck="false" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;//webfonts.lk/fonts/{{ font | slug }}/fonts/webfonts/fonts.css&quot;&gt;" />
+                    <label class="label-code" for="css-{{ $index }}"> CSS: </label>
+                    <input id="css-{{ $index }}" type="text" ng-click="selectText($event)" class="input-code"  readonly spellcheck="false" value="body { font-family: &quot;{{ font }}&quot;; }" />
+                </div>
+            </div>
+        </div>
+
+        <div class="alert" ng-hide="(fonts | filter:query).length">
+            Web-font with name <strong>{{ query }}</strong> not found.
+        </div>
+
+    </div>
+
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
