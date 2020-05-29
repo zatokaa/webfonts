@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Web-Fonts CDN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="fonts/dinamina-libre/fonts/webfonts/fonts.css">
-    <link rel="stylesheet" href="fonts/maname-regular/fonts/webfonts/fonts.css">
+    <link rel="stylesheet" href="fonts/maname/fonts/webfonts/fonts.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <script>
-    var fonts = ["Bhashitha","Bhashitha Sans","Dinamina Libre","Galle","Gemunu Libre","Kaputa","Malithi Libre","Maname","Post No Bills","Warna","Yaldevi"];
+    var fonts = ["Bhashitha","Bhashitha Sans","Dinamina Libre","Galle","Gemunu Libre","Kaputa","Malithi Libre","Maname","Stick No Bills","Warna","Yaldevi", "Motta Type One"];
     </script>
 
 </head>
@@ -27,8 +26,8 @@
         <div class="list" ng-show="(fonts | filter:query).length">
             <div class="list__item" ng-repeat="font in fonts | filter:query">
                 <link rel="stylesheet" href="fonts/{{ font | slug }}/fonts/webfonts/fonts.css">
-                <p style="font-family:{{ font }}; font-size: 20px;">සීගිරි පර්වත මස්තකාරූඪ මනුෂ්‍යයෙකුට සෝදාහරණ සහිත ව හෙළයා ගේ ශෛල, වාරි, ගෘහ නිර්මාණ ශක්‍යතාව ද සෙල්බිතෙහි තැවරූ මඩස්තරයක ඇඳි නාරි චිත්‍රයන් ගෙන් සහ කැටපත්පවුරෙහි ලිඛිත කුරුටු ගීවලින් හෙළයා ගේ සෞන්දර්ය හැකියාව දු මනා සේ දැකගත හැක.
-</p>
+                <h2 style="font-family:{{ font }}; font-size: 30px;">දැරණියගලට ඉහල අහසේ දඟකරන වලාපෙළ මවනා සොඳුරු දසුන රාත්‍රිය උදාවත් සමග ක්‍ෂයවේ.
+</h2>
                 <h2 class="list__title"><a href="//webfonts.lk/{{ font | slug }}/" target="_blank">{{ font }}</a></h2>
 
                 <div class="usage">
