@@ -25,14 +25,14 @@
 
         <div class="list" ng-show="(fonts | filter:query).length">
             <div class="list__item" ng-repeat="font in fonts | filter:query">
-                <link rel="stylesheet" href="fonts/{{ font | slug }}/fonts.css">
+                <link rel="stylesheet" href="fonts/{{ font | slug }}/fonts/webfonts/fonts.css">
                 <h2 style="font-family:{{ font }}; font-size: 42px; font-weight: normal; ">දැරණියගලට ඉහල අහසේ දඟකරන වලාපෙළ මවනා සොඳුරු දසුන රාත්‍රිය උදාවත් සමග ක්‍ෂයවේ.
 </h2>
                 <h2 class="list__title"><a href="//webfonts.lk/{{ font | slug }}/" target="_blank">{{ font }}</a></h2>
 
                 <div class="usage">
                     <label class="label-code" for="html-{{ $index }}"> HTML: </label>
-                    <input id="html-{{ $index }}" type="text" ng-click="selectText($event)" class="input-code" readonly spellcheck="false" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;//webfonts.lk/fonts/{{ font | slug }}/fonts.css&quot;&gt;" />
+                    <input id="html-{{ $index }}" type="text" ng-click="selectText($event)" class="input-code" readonly spellcheck="false" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;//webfonts.lk/fonts/{{ font | slug }}/fonts/webfonts/fonts.css&quot;&gt;" />
                     <label class="label-code" for="css-{{ $index }}"> CSS: </label>
                     <input id="css-{{ $index }}" type="text" ng-click="selectText($event)" class="input-code"  readonly spellcheck="false" value="body { font-family: &quot;{{ font }}&quot;; }" />
                 </div>
